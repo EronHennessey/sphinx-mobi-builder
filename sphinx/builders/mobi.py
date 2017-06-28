@@ -25,7 +25,7 @@ from docutils import nodes
 import sphinx
 from sphinx.builders.html import StandaloneHTMLBuilder
 from sphinx.util.osutil import EEXIST, make_filename
-from sphinx.util.smartypants import sphinx_smarty_pants as ssp
+from docutils.utils.smartquotes import smartyPants as ssp
 
 
 # (Fragment) templates from which the metainfo files content.opf, toc.ncx,
