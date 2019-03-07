@@ -14,16 +14,16 @@ Important: Why you *don't* want to use this!
 In my humble opionion, the *best way* to generate ``.mobi`` files from Sphinx is:
 
 #. Turn *off* ``smartquotes`` in your ``conf.py``. This is important to keep quote characters that
-   work *just fine* with the EPUB format from being rendered incorrectly after conversion by
+   work *just fine* with the Epub format from being rendered incorrectly after conversion by
    ``kindlegen``::
 
        smartquotes = False
 
-#. Generate an EPUB, by running::
+#. Generate an Epub, by running::
 
       sphinx-build -b epub <sourcedir> <outputdir>
 
-#. Run kindlegen_ to convert the EPUB to a ``.mobi``::
+#. Run kindlegen_ to convert the Epub to a ``.mobi``::
 
       kindlegen <outputdir>/<title>.epub -o <title>.mobi
 
