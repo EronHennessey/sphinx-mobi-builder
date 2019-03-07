@@ -13,7 +13,7 @@ Important: Why you *don't* want to use this!
 
 In my humble opionion, the *best way* to generate ``.mobi`` files from Sphinx is:
 
-#. Turn *off** ``smartquotes`` in your ``conf.py``. This is important to keep quote characters that
+#. Turn *off* ``smartquotes`` in your ``conf.py``. This is important to keep quote characters that
    work *just fine* with the EPUB format from being rendered incorrectly after conversion by
    ``kindlegen``::
 
@@ -23,7 +23,7 @@ In my humble opionion, the *best way* to generate ``.mobi`` files from Sphinx is
 
       sphinx-build -b epub <sourcedir> <outputdir>
 
-#. Run `kindlegen`_ to convert the EPUB to a ``.mobi``::
+#. Run kindlegen_ to convert the EPUB to a ``.mobi``::
 
       kindlegen <outputdir>/<title>.epub -o <title>.mobi
 
@@ -47,10 +47,8 @@ Requirements
 
 The ``.mobi`` builder requires:
 
-* `kindlegen`__ - A command-line Kindle builder from Amazon.com. Just download the application and put it in your
+* kindlegen_ - A command-line Kindle builder from Amazon.com. Just download the application and put it in your
   *PATH*.
-
-.. __: http://www.amazon.com/gp/feature.html?docId=1000765211
 
 
 Installation
@@ -169,3 +167,4 @@ As per the original script, this code is made available using the `BSD Open Sour
 
 .. __: http://opensource.org/licenses/BSD-3-Clause
 
+.. _kindlegen: http://www.amazon.com/gp/feature.html?docId=1000765211
